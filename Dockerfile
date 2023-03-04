@@ -8,6 +8,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/at
 WORKDIR /var/www/html
 RUN unzip atema.zip
 RUN cp -rvf markups-atema/* .
-RUN rm -rf _MACOSX markups-atema atema.zip
+RUN rm -rf atema atema.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
